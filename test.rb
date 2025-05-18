@@ -73,6 +73,10 @@ module RubyLLM
       def format_role(role)
         role.to_s
       end
+
+      # def render_payload(*args, **keywords)
+      #   super(*args, **keywords).merge(response_format: {type: 'json_object'})
+      # end
     end
   end
 
