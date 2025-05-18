@@ -37,6 +37,10 @@ module RubyLLM
       def configuration_requirements
         %i[glm_api_key]
       end
+
+      def format_role(role)
+        role.to_s
+      end
     end
 
     module Moonshot
@@ -64,6 +68,10 @@ module RubyLLM
 
       def configuration_requirements
         %i[moonshot_api_key]
+      end
+
+      def format_role(role)
+        role.to_s
       end
     end
   end
